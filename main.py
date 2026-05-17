@@ -1,14 +1,16 @@
 def fizz_buzz(n):
     if (n%15 == 0):
-        print ("Fizz_Buzz")
+        result = "Fizz_Buzz"
     elif (n%3 == 0):
-        print ("Fizz")
+        result = "Fizz"
     elif (n%5 == 0):
-        print ("Buzz")
+        result = "Buzz"
     else:
-        print (str(n))
+        result = str(n)
+     
+    return result
 
-fizz_buzz()
+print(fizz_buzz())
 
 
 
