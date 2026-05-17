@@ -1,6 +1,6 @@
 def fizz_buzz(n):
     if (n%15 == 0):
-        result = "Fizz_Buzz"
+        result = "FizzBuzz"
     elif (n%3 == 0):
         result = "Fizz"
     elif (n%5 == 0):
