@@ -1,16 +1,13 @@
-def fizz_buzz(n):
-    if (n%15 == 0):
-        result = "FizzBuzz"
-    elif (n%3 == 0):
-        result = "Fizz"
-    elif (n%5 == 0):
-        result = "Buzz"
-    else:
-        result = str(n)
-     
-    return result
+def fizz_buzz(n):     
+    if n % 3 == 0 and n % 5 == 0:
+        return "FizzBuzz"
+    if n % 3 == 0:
+        return "Fizz"
+    if n % 5 == 0:
+        return "Buzz"
+    return str(n)
 
-print(fizz_buzz())
+number = int(input("enter a Natural number: "))
+result = fizz_buzz(number)
 
-
-
+print(result)
