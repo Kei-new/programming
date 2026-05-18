@@ -1,13 +1,15 @@
-def fizz_buzz(n):     
-    if n % 3 == 0 and n % 5 == 0:
+def fizz_buzz(n,x,y):     
+    if n % x == 0 and n % y == 0:
         return "FizzBuzz"
-    if n % 3 == 0:
+    if n % x == 0:
         return "Fizz"
-    if n % 5 == 0:
+    if n % y == 0:
         return "Buzz"
     return str(n)
 
 number = int(input("enter a Natural number: "))
-result = fizz_buzz(number)
+naturalx = int(input("enter a Natural number for x: "))
+naturaly = int(input("enter a Natural number for y: "))
+result = fizz_buzz(number, naturalx, naturaly)
 
 print(result)
